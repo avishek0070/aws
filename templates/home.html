@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>This is the Home page of flask application</h1>
+    <p>You can try navigating to the below pages:</p>
+    <ol>
+        <li>
+            This is a page for about me:
+            <a href="{{url_for('about')}}">
+                <input type="button" value="About Me">
+            </a>
+        </li>
+        <br>
+        <li>
+            You can contact me Here: 
+            <a href="{{url_for('about_contact')}}">
+                <input type="button" value="Contact Me">
+            </a>
+        </li>
+    </ol>
+
+    <br><br><br>
+    <p>
+        Alternatively you can also go to the following endpoints directly by navigating via address <br>
+        * home : / <br>
+        * about: /about <br>
+        * contact: /about/contact <br>
+    </p>
+</body>
+</html>
